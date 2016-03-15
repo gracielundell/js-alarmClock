@@ -1,5 +1,10 @@
 $(document).ready(function(){
-  $('#time').text(moment());
-});
+  setInterval(function(){ $('#time').text(moment().format('h:mm:ss a')); }, 1000);
 
-console.log("Hello");
+
+  $("#test").click(function() {
+    var time = (moment().format('h:mm:ss a'))
+    $(".currentTime").append(time);
+  });
+
+});

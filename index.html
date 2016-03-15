@@ -9,11 +9,48 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Ping Pong</title>
+    <title>Alarm Clock</title>
   </head>
   <body>
     <h1>The time is</h1>
-    <div id="time">
+    <h1 id="time"></h1>
+    <form class="clock" action="index.html" method="post">
+      <select class="hours" name="">
+        <option value="No Size Selected">00</option>
+        <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="05">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select class="minutes">
+        <option selected="selected">:00</option>
+        <option value="05">:05</option>
+        <option value="10">:10</option>
+        <option value="15">:15</option>
+        <option value="20">:20</option>
+        <option value="25">:25</option>
+        <option value="30">:30</option>
+        <option value="35">:35</option>
+        <option value="40">:40</option>
+        <option value="45">:45</option>
+        <option value="50">:50</option>
+        <option value="55">:55</option>
+      </select>
+      <select class="ampm" name="">
+        <option value="a">am</option>
+        <option value="p">pm</option>
+      </select>
+    </form>
+    <button id="test" type="button" name="button">Test</button>
+    <div class="currentTime">
 
     </div>
   </body>
